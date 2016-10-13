@@ -1,0 +1,208 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+	box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  position: relative;
+}
+
+.overlay {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 100000;
+	top: 0;
+	right: 0;
+	background-color: rgba(0,0,0, 0.9);
+	overflow-x: hidden;
+	transition: all 0.5s ease-in;
+}
+
+.overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 2em;
+}
+
+.overlay a {
+	padding: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: #818181;
+	display: block;
+	transition: all 0.5s ease-in;
+}
+
+.overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+
+.hamburger {
+	position: fixed;
+	z-index: 1000;
+	top: 3em;
+	right: 3em;
+	cursor: pointer;
+}
+
+.ham-bars {
+	width: 35px;
+}
+
+.hero-text {
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translateX(-50%);
+	text-align: center;
+}
+
+.img-flex {
+  width: 100%;
+}
+
+.piece-box {
+  width: 100%;
+  padding: 1em;
+  position: relative;
+}
+
+.piece-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.work {
+  text-align: center;
+}
+
+.underline {
+  width: 100px;
+}
+
+.me {
+  text-align: center;
+  padding: 1em;
+}
+
+.me p {
+  text-align: left;
+}
+
+.btn-hollo {
+  text-decoration: none;
+  color: blue;
+  border: 1px solid blue;
+  transition: all .2s ease-in;
+  padding: 1em;
+  clear: both;
+}
+
+.see-all {
+  margin-top: 1em;
+  clear: both;
+}
+
+.btn-hollo:hover {
+  color: #fff;
+  background-color: blue;
+}
+
+footer {
+	padding: 2em 1em;
+}
+
+footer p {
+	font-size: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+
+	.overlay a {
+		font-size: 36px;
+	}
+
+	.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+  .hero {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  .piece-box {
+    float: left;
+    width: 50%;
+  }
+
+  .me {
+    clear: both;
+  }
+
+  .underline {
+    clear: both;
+  }
+
+	.see-all {
+		margin-top: 5em;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+
+  .nav li {
+    display: inline-block;
+    margin: 0 50px;
+  }
+
+  main {
+    margin: 0 2em;
+  }
+
+  .nav {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+
+  main {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
