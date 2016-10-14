@@ -47,9 +47,9 @@ header {
 }
 
 .overlay a {
-	padding: 20px;
+	padding: 25px;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 40px;
 	color: #818181;
 	display: block;
 	transition: all 0.5s ease-in;
@@ -67,7 +67,7 @@ header {
 
 .hamburger {
 	position: fixed;
-	z-index: 1000;
+	z-index: 100;
 	top: 3em;
 	right: 3em;
 	cursor: pointer;
@@ -106,8 +106,18 @@ header {
   text-align: center;
 }
 
+.link-card {
+	color: #000;
+	transition: all .2s ease-in;
+}
+
+.link-card:hover {
+	opacity: .7;
+}
+
 .underline {
   width: 100px;
+	margin-bottom: 2em;
 }
 
 .me {
@@ -139,17 +149,46 @@ header {
 }
 
 footer {
+	text-align: center;
 	padding: 2em 1em;
+	clear: both;
 }
 
 footer p {
 	font-size: 10px;
 }
 
+.about-client {
+	padding: 3em 1em;
+}
+
+.about-title {
+	display: block;
+	vertical-align: top;
+}
+
+.about-title h2 {
+	margin-bottom: 0;
+}
+
+.about-title h3 {
+	margin-top: 10px;
+}
+
+.about-desc {
+	display: block;
+	vertical-align: top;
+}
+
+.about-desc p {
+	margin-top: 0;
+	line-height: 1.3;
+}
+
 @media only screen and (min-width: 600px) {
 
 	.overlay a {
-		font-size: 36px;
+		font-size: 60px;
 	}
 
 	.overlay .closebtn {
@@ -169,20 +208,30 @@ footer p {
     width: 50%;
   }
 
-  .me {
-    clear: both;
-  }
-
   .underline {
     clear: both;
   }
 
-	.see-all {
-		margin-top: 5em;
+	.about-desc {
+		display: inline-block;
+		width: 66%;
+		vertical-align: top;
+	}
+
+	.about-title {
+		display: inline-block;
+		width: 31%;
+		vertical-align: top;
 	}
 }
 
 @media only screen and (min-width: 800px) {
+
+	.about-client {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
   .nav li {
     display: inline-block;
@@ -190,7 +239,7 @@ footer p {
   }
 
   main {
-    margin: 0 2em;
+    margin: 0 1em;
   }
 
   .nav {
@@ -201,7 +250,7 @@ footer p {
 @media only screen and (min-width: 1000px) {
 
   main {
-    max-width: 1440px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
