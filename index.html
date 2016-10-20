@@ -1,98 +1,26 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>Rob O'Donnell | Branding Solutions</title>
-  <link href="css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
-<body>
+---
+layout: default
+title: Rob O'Donnell · Branding solutions and web design
+---
 
-  <header>
-    <div class="hero">
-      <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<section class="work" id="work">
 
-      <div class="overlay-content">
-        <a href="work.html">Work</a>
-        <a href="contact.html">Contact</a>
-      </div>
+  <div>
+    <h2>case studies</h2>
+    <img class="underline" src="img/underline.svg">
+  </div>
 
-      </div>
-      <span onclick="openNav()" class="hamburger">
-        <img src="img/hamburg.svg" class="ham-bars">
-      </span>
-
-      <div class="hero-img">
-        <img class="img-flex" src="http://placehold.it/400x600">
-      </div>
-
-      <div class="hero-text">
-        <h1>Rob O'Donnell</h1>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <div class="work" id="work">
-
-      <div>
-        <h2>case studies</h2>
-        <img class="underline" src="img/underline.svg">
-      </div>
-
-      <a href="piece.html" class="link-card">
-        <div class="piece-box">
-          <div class="piece-feat-img">
-            <img class="img-flex" src="http://placehold.it/400x300">
-          </div>
-          <div class="piece-title">
-            <h3>Piece title</h3>
-          </div>
+  {% for post in site.posts %}
+    <a href="{{site.baseurl}}/piece" class="link-card">
+      <div class="piece-box">
+        <div class="piece-feat-img">
+          <img class="img-flex" src="{{site.baseurl}}/img/{{post.image}}">
         </div>
-      </a>
-
-      <a href="piece.html" class="link-card">
-        <div class="piece-box">
-          <div class="piece-feat-img">
-            <img class="img-flex" src="http://placehold.it/400x300">
-          </div>
-          <div class="piece-title">
-            <h3>Piece title</h3>
-          </div>
+        <div class="piece-title">
+          <h3>{{post.title}}</h3>
         </div>
-      </a>
+      </div>
+    </a>
+  {% endfor %}
 
-      <a href="piece.html" class="link-card">
-        <div class="piece-box">
-          <div class="piece-feat-img">
-            <img class="img-flex" src="http://placehold.it/400x300">
-          </div>
-          <div class="piece-title">
-            <h3>Piece title</h3>
-          </div>
-        </div>
-      </a>
-
-      <a href="piece.html" class="link-card">
-        <div class="piece-box">
-          <div class="piece-feat-img">
-            <img class="img-flex" src="http://placehold.it/400x300">
-          </div>
-          <div class="piece-title">
-            <h3>Piece title</h3>
-          </div>
-        </div>
-      </a>
-    </div>
-  </main>
-
-  <footer>
-    <p>© 2016 Rob O'Donnell</p>
-  </footer>
-
-  <script src="js/main.js"></script>
-
-
-</body>
-</html>
+</section>

@@ -185,11 +185,39 @@ footer p {
 	line-height: 1.3;
 }
 
+.contact-me {
+	text-align: center;
+	padding-top: 3em;
+}
+
+.contact-options {
+	text-align: center;
+	padding: 2em 0;
+}
+
+.contact-options a {
+	text-decoration: none;
+}
+
+.email-me {
+	margin-bottom: 2em;
+}
+
+.social {
+  width: 50px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
 @media only screen and (min-width: 600px) {
 
 	.overlay a {
 		font-size: 60px;
 	}
+
+	.social {
+    margin: 0 25px;
+  }
 
 	.overlay .closebtn {
     position: absolute;
@@ -253,5 +281,9 @@ footer p {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+	.social {
+    margin: 0 40px;
   }
 }

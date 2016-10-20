@@ -2,8 +2,8 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>About Me</title>
-  <link href="css/main.css" rel="stylesheet">
+  <title>Rob O'Donnell | Branding Solutions</title>
+  <link href="{{site.baseurl}}css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 <body>
@@ -14,9 +14,8 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
       <div class="overlay-content">
-        <a href="work.html">Work</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="{{site.baseurl}}/work">Work</a>
+        <a href="{{site.baseurl}}/contact">Contact</a>
       </div>
 
       </div>
@@ -29,15 +28,22 @@
       </div>
 
       <div class="hero-text">
-        <h1>Piece Title</h1>
+        <h1>Rob O'Donnell</h1>
       </div>
     </div>
-
   </header>
 
   <main>
-    
+
+    {{content}}
+
   </main>
+
+  <footer>
+    <p>© 2016 Rob O'Donnell</p>
+  </footer>
+
+  <script src="js/main.js"></script>
 
 </body>
 </html>
