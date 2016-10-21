@@ -1,37 +1,9 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>Rob O'Donnell | Branding Solutions</title>
-  <link href="{{site.baseurl}}css/main.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-</head>
+
+{%include head.html%}
+
 <body>
 
-  <header>
-    <div class="hero">
-      <div id="myNav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-      <div class="overlay-content">
-        <a href="{{site.baseurl}}/work">Work</a>
-        <a href="{{site.baseurl}}/contact">Contact</a>
-      </div>
-
-      </div>
-      <span onclick="openNav()" class="hamburger">
-        <img src="img/hamburg.svg" class="ham-bars">
-      </span>
-
-      <div class="hero-img">
-        <img class="img-flex" src="http://placehold.it/400x600">
-      </div>
-
-      <div class="hero-text">
-        <h1>Rob O'Donnell</h1>
-      </div>
-    </div>
-  </header>
+  {%include header.html%}
 
   <main>
 
@@ -39,11 +11,13 @@
 
   </main>
 
-  <footer>
-    <p>© 2016 Rob O'Donnell</p>
-  </footer>
+  {%include footer.html%}
 
-  <script src="js/main.js"></script>
+  <script src="{{site.baseurl}}/js/main.js"></script>
+  <script src="{{site.baseurl}}/js/rellax.min.js"></script>
+  <script>
+    var rellax = new Rellax('.rellax');
+  </script>
 
 </body>
 </html>

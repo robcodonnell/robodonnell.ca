@@ -83,6 +83,11 @@ header {
   top: 65%;
   transform: translateX(-50%);
 	text-align: center;
+	color: #fff;
+}
+
+.page-header {
+	font-size: 60px;
 }
 
 .img-flex {
@@ -91,7 +96,7 @@ header {
 
 .piece-box {
   width: 100%;
-  padding: 1em;
+  padding: 0;
   position: relative;
 }
 
@@ -209,6 +214,70 @@ footer p {
   margin: 0 10px;
 }
 
+.work {
+	margin-top: em;
+}
+
+.feature-piece-one, .feature-piece-two {
+	text-decoration: none;
+}
+
+.feature-piece-box {
+	padding: 2em;
+}
+
+.feature-piece-title {
+	padding: 2em;
+	margin-bottom: 1em;
+}
+
+.feat-one {
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+.feat-one:hover {
+	background-color: #055138;
+}
+
+.tailwater-green {
+	transition: all .2s ease-in;
+}
+
+.feat-one:hover .tailwater-green {
+	fill: #fff;
+}
+
+.feat-two {
+	transition: all .2s ease-in;
+	cursor: pointer;
+}
+
+.feat-two:hover {
+	background-color: #f44336;
+}
+
+.etho-red {
+	transition: all .2s ease-in;
+}
+
+.feat-two:hover .etho-red {
+	fill: #fff;
+}
+
+.yellow-tri-sm {
+	width: 50px;
+	position: absolute;
+	left: 100px;
+}
+
+.blue-tri-md {
+	width: 100px;
+	position: absolute;
+	right: 250px;
+	transform: rotate(45deg);
+}
+
 @media only screen and (min-width: 600px) {
 
 	.overlay a {
@@ -266,10 +335,6 @@ footer p {
     margin: 0 50px;
   }
 
-  main {
-    margin: 0 1em;
-  }
-
   .nav {
     margin-right: 0;
   }
@@ -277,11 +342,17 @@ footer p {
 
 @media only screen and (min-width: 1000px) {
 
-  main {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+	.feature-piece-title {
+		display: inline-block;
+		width: 35%;
+		vertical-align: top;
+	}
+
+	.feature-piece-img {
+		display: inline-block;
+		width: 60%;
+		vertical-align: top;
+	}
 
 	.social {
     margin: 0 40px;
