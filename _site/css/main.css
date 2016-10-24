@@ -26,6 +26,14 @@ header {
   position: relative;
 }
 
+.hero {
+	height: 100vh;
+}
+
+.hero-img {
+	overflow: hidden;
+}
+
 .overlay {
 	height: 100%;
 	width: 0;
@@ -92,6 +100,10 @@ header {
 
 .img-flex {
   width: 100%;
+}
+
+.img-oversize {
+	width: 150%;
 }
 
 .piece-box {
@@ -216,6 +228,7 @@ footer p {
 
 .work {
 	margin-top: em;
+	position: relative;
 }
 
 .feature-piece-one, .feature-piece-two {
@@ -223,11 +236,11 @@ footer p {
 }
 
 .feature-piece-box {
-	padding: 2em;
+	padding: 20%;
 }
 
 .feature-piece-title {
-	padding: 2em;
+	padding: 4em;
 	margin-bottom: 1em;
 }
 
@@ -236,16 +249,12 @@ footer p {
 	cursor: pointer;
 }
 
-.feat-one:hover {
-	background-color: #055138;
-}
-
 .tailwater-green {
 	transition: all .2s ease-in;
 }
 
 .feat-one:hover .tailwater-green {
-	fill: #fff;
+	fill: #055138;
 }
 
 .feat-two {
@@ -253,29 +262,57 @@ footer p {
 	cursor: pointer;
 }
 
-.feat-two:hover {
-	background-color: #f44336;
-}
-
 .etho-red {
 	transition: all .2s ease-in;
 }
 
 .feat-two:hover .etho-red {
-	fill: #fff;
+	fill: #f44336;
 }
 
-.yellow-tri-sm {
-	width: 50px;
+.feat-two .feature-piece-title {
+	padding: 1em 5em;
+}
+
+.svg-illu > .tailwater-green {
+	padding: 1em;
+}
+
+.fish-sm {
+	width: 80px;
 	position: absolute;
 	left: 100px;
 }
 
-.blue-tri-md {
-	width: 100px;
+.fish-md {
+	width: 120px;
 	position: absolute;
-	right: 250px;
-	transform: rotate(45deg);
+	left: 145px;
+	top: 200px;
+}
+
+.fish-lg {
+	width: 160px;
+	position: absolute;
+	left: -25px;
+}
+
+.pill-md {
+	width: 60px;
+	position: absolute;
+	right: 150px;
+}
+
+.pill-sm {
+	width: 50px;
+	position: absolute;
+	right: 50px;
+}
+
+.pill-lg {
+	width: 90px;
+	position: absolute;
+	right: -10px;
 }
 
 @media only screen and (min-width: 600px) {
@@ -296,7 +333,6 @@ footer p {
 }
 
   .hero {
-    height: 100vh;
     overflow-y: hidden;
   }
 
@@ -342,19 +378,43 @@ footer p {
 
 @media only screen and (min-width: 1000px) {
 
-	.feature-piece-title {
-		display: inline-block;
-		width: 35%;
-		vertical-align: top;
+	.feature-piece-box {
+		float: left;
+		width: 50%;
+		padding-bottom: 20em;
+		margin-bottom: -10em;
+		padding: 8em 15em 15em 15em;
 	}
 
-	.feature-piece-img {
-		display: inline-block;
-		width: 60%;
-		vertical-align: top;
+	.feat-two .feature-piece-title {
+		padding: 0
+	}
+
+	.feature-piece-title {
+		padding: 1em;
+		margin-bottom: 2em;
+	}
+
+	.work-container {
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.feature-piece-two .feat-two {
+		padding-left: 6em;
+	}
+
+	.feature-piece-one .feat-one {
+		padding-right: 6em;
 	}
 
 	.social {
     margin: 0 40px;
   }
+}
+
+@media only screen and (min-width: 1200px) {
+	.feature-piece-box {
+		padding: 8em 20em 20em 20em;
+	}
 }
