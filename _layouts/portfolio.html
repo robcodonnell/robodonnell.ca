@@ -1,0 +1,59 @@
+{%include head.html%}
+
+{% assign p = site.data.pieces[page.data] %}
+
+<header style="background-image: url('{{site.baseurl}}/img/{{p.piece.heroImg}}'); background-size: cover;">
+  <div class="hero">
+    <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <div class="overlay-content">
+      <a href="{{site.baseurl}}/">Home</a>
+      <a href="{{site.baseurl}}/work">Work</a>
+      <a href="{{site.baseurl}}/contact">Contact</a>
+    </div>
+
+    </div>
+    <span onclick="openNav()" class="hamburger">
+      <img src="{{site.baseurl}}/img/hamburg.svg" class="ham-bars">
+    </span>
+
+    <div class="hero-img">
+    </div>
+
+    <div class="hero-text">
+      <h1>{{p.piece.postTitle}}</h1>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="about-client">
+    <div class="about-title">
+      <h2>{{p.piece.postTitle}}</h2>
+      <h3>{{p.piece.titleSecond}}</h3>
+      <img class="underline" src="{{site.baseurl}}/img/underline.svg">
+    </div>
+
+    <div class="about-desc">
+      <p>{{p.piece.intro}}</p>
+    </div>
+
+    <div class="about-study">
+      <img class="img-flex" src="{{p.piece.img1}}">
+      <img class="img-flex" src="{{p.piece.img2}}">
+      <img class="img-flex" src="{{p.piece.img3}}">
+      <img class="img-flex" src="{{p.piece.img4}}">
+    </div>
+  </div>
+
+</main>
+
+  {%include footer.html%}
+
+  <script src="{{site.baseurl}}/js/main.js"></script>
+
+
+</body>
+</html>
