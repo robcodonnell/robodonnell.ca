@@ -1,3 +1,7 @@
+---
+title: site.data.pieces[page.data].title
+---
+
 {%include head.html%}
 
 {% assign p = site.data.pieces[page.data] %}
@@ -22,7 +26,9 @@
     </div>
 
     <div class="hero-text">
-      <h1>{{p.piece.postTitle}}</h1>
+      {% if p.piece.postHeader %}
+        <h1>{{p.piece.postHeader}}</h1>
+      {% endif %}
     </div>
   </div>
 </header>
@@ -32,7 +38,6 @@
   <div class="about-client">
     <div class="about-title">
       <h2>{{p.piece.postTitle}}</h2>
-      <h3>{{p.piece.titleSecond}}</h3>
       <img class="underline" src="{{site.baseurl}}/img/underline.svg">
     </div>
 
@@ -41,10 +46,10 @@
     </div>
 
     <div class="about-study">
-      <img class="img-flex" src="{{p.piece.img1}}">
-      <img class="img-flex" src="{{p.piece.img2}}">
-      <img class="img-flex" src="{{p.piece.img3}}">
-      <img class="img-flex" src="{{p.piece.img4}}">
+      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img1}}">
+      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img2}}">
+      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img3}}">
+      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img4}}">
     </div>
   </div>
 

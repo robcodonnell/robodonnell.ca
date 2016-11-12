@@ -1,0 +1,18 @@
+---
+layout: workPage
+title: Case Studies
+meta: A collection of case studies of Rob O'Donnell's work including branding, web design, UX, typography.
+---
+
+<section class="work-feed">
+  {% for data in site.data.pieces[page.data] %}
+    <div class="case-study">
+      <div class="case-img">
+        <img src="{{site.baseurl}}/img/{{piece.heroImg}}">
+      </div>
+      <div class="case-title">
+        <h2>{{piece.title}}</h2>
+      </div>
+    </div>
+  {% endfor %}
+</section>
