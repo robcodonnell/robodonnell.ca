@@ -44,12 +44,29 @@ title: site.data.pieces[page.data].title
     <div class="about-desc">
       <p>{{p.piece.intro}}</p>
     </div>
+  </div>
+
+  <div class="client-photos">
+    {% if p.piece.website%}
+      <div class="imac-mockup">
+        <img class="img-flex" src="{{site.baseurl}}/img/imac.png">
+        <iframe class="site-mockup" src="{{p.piece.website}}" style="border:none;"></iframe>
+      </div>
+    {% endif %}
 
     <div class="about-study">
-      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img1}}">
-      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img2}}">
-      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img3}}">
-      <img class="img-flex" src="{{site.baseurl}}/img/{{p.piece.img4}}">
+      {% if p.piece.img1 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img1}}">
+      {% endif %}
+      {% if p.piece.img2 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img2}}">
+      {% endif %}
+      {% if p.piece.img3 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img3}}">
+      {% endif %}
+      {% if p.piece.img4 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img4}}">
+      {% endif %}
     </div>
   </div>
 

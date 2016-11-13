@@ -30,6 +30,10 @@ h1 {
 	font-size: 60px;
 }
 
+p {
+	font-family: 'Inconsolata', monospace;
+}
+
 .hero {
 	height: 100vh;
 }
@@ -108,6 +112,7 @@ h1 {
 
 .img-oversize {
 	width: 150%;
+	transform: translateX(-15%);
 }
 
 .piece-box {
@@ -143,15 +148,6 @@ h1 {
 	margin-left: -8px;
 }
 
-.me {
-  text-align: center;
-  padding: 1em;
-}
-
-.me p {
-  text-align: left;
-}
-
 .btn-hollo {
   text-decoration: none;
   color: blue;
@@ -185,6 +181,10 @@ footer p {
 	padding: 3em 1em;
 }
 
+.client-photos {
+	padding: 3em 1em;
+}
+
 .about-title {
 	display: block;
 	vertical-align: top;
@@ -205,7 +205,7 @@ footer p {
 
 .about-desc p {
 	margin-top: 0;
-	line-height: 1.3;
+	line-height: 1.5;
 }
 
 .contact-me {
@@ -321,7 +321,55 @@ footer p {
 	right: -10px;
 }
 
+.case-study:hover .case-box {
+	opacity: .7;
+}
+
+.case-box {
+	position: relative;
+	height: 400px;
+	overflow: hidden;
+	text-align: center;
+	transition: all .3s ease-in;
+}
+
+.img-height {
+	height: 400px;
+}
+
+.case-title {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+	z-index: 100000;
+}
+
+.site-mockup {
+	width: 95%;
+	height: 56%;
+	position: absolute;
+	top: 32%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.imac-mockup {
+	position: relative;
+	padding-bottom: 3em;
+}
+
+.case-study-img {
+	margin-bottom: 2em;
+}
+
 @media only screen and (min-width: 600px) {
+
+	.site-mockup {
+		height: 59%;
+		top: 32%;
+	}
 
 	.overlay a {
 		font-size: 60px;
@@ -362,11 +410,22 @@ footer p {
 		width: 31%;
 		vertical-align: top;
 	}
+
+	.case-study {
+		float: left;
+		width: 50%;
+	}
 }
 
 @media only screen and (min-width: 800px) {
 
 	.about-client {
+		max-width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.client-photos {
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
@@ -417,6 +476,15 @@ footer p {
 	.social {
     margin: 0 40px;
   }
+
+	.case-study {
+		width: calc(100%/3);
+	}
+
+	.site-mockup {
+		height: 59%;
+		top: 34%;
+	}
 }
 
 @media only screen and (min-width: 1200px) {
