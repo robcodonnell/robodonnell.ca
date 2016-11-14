@@ -1,10 +1,10 @@
-piece:
-  title: One Plus One - Website Design
-  postHeader: One Plus One
-  postTitle: Brand Identity and Site Design
-  heroImg: oneplusone-hero.jpg
-  link: oneplusone
-  intro: One Plus One is a wedding planning software that takes a lot of the stress out of planning a wedding. My work involved taking their product, designing an identity for it and then designing and coding a marketing website that would introduce users to the product and drive conversions.
-  img1: oneplusone-logos.png
-  img2: oneplusoneicon.jpg
-  website: http://robcodonnell.github.io/dsn1675-one-plus-one/
+title: One Plus One - Website Design
+postHeader: One Plus One
+postTitle: Brand Identity and Site Design
+heroImg: oneplusone-hero.jpg
+link: oneplusone
+intro: One Plus One is a wedding planning software that takes a lot of the stress out of planning a wedding. My work involved taking their product, designing an identity for it and then designing and coding a marketing website that would introduce users to the product and drive conversions.
+img1: oneplusone-logos.png
+img2: oneplusoneicon.jpg
+img3:
+website: http://robcodonnell.github.io/dsn1675-one-plus-one/

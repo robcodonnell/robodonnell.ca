@@ -7,17 +7,16 @@ hero: work-hero.jpg
 
 <section class="work-feed">
   {% for data in site.data.pieces %}
-    {% for item in data %}
-      <a class="case-study" href="{{site.baseurl}}/{{item.piece.link}}">
+    {% assign item = data[1] %}
+      <a class="case-study" href="{{site.baseurl}}/{{item.link}}">
         <div class="case-box">
           <div class="case-img">
-            <img class="img-height"src="{{site.baseurl}}/img/{{item.piece.heroImg}}">
+            <img class="img-height"src="{{site.baseurl}}/img/{{item.heroImg}}">
           </div>
           <div class="case-title">
-            <h2>{{item.piece.title}}</h2>
+            <h2>{{item.title}}</h2>
           </div>
         </div>
       </a>
-    {% endfor %}
   {% endfor %}
 </section>

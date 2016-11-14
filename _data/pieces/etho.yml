@@ -1,8 +1,10 @@
-piece:
-  title: Etho - App Concept and Brand Identity
-  postHeader: etho
-  postTitle: App Concept and Brand Identity
-  heroImg: etho-hero.jpg
-  link: etho
-  intro: etho is an app concept I developped for doctors and patients that would make managing prescriptions easier. The app would allow doctors to create and set reminders for prescription schedules that they could then share with their patients. The patients would then be notified any time they had to take a dose or refill a prescription, and would be able to track their progress and report any issues or side effects instantly to their doctor. I designed the flow of the app as well as the UI, and created a brand identity to go with it.
-  img1: etho-project.png
+title: Etho - App Concept and Brand Identity
+postHeader: etho
+postTitle: App Concept and Brand Identity
+heroImg: etho-hero.jpg
+link: etho
+intro: etho is an app concept I developped for doctors and patients that would make managing prescriptions easier. The app would allow doctors to create and set reminders for prescription schedules that they could then share with their patients. The patients would then be notified any time they had to take a dose or refill a prescription, and would be able to track their progress and report any issues or side effects instantly to their doctor. I designed the flow of the app as well as the UI, and created a brand identity to go with it.
+img1: etho-project.png
+img2:
+img3:
+website:

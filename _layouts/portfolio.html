@@ -6,7 +6,7 @@ title: site.data.pieces[page.data].piece.title
 
 {% assign p = site.data.pieces[page.data] %}
 
-<header style="background-image: url('{{site.baseurl}}/img/{{p.piece.heroImg}}'); background-size: cover;">
+<header style="background-image: url('{{site.baseurl}}/img/{{p.heroImg}}'); background-size: cover; background-position: center;">
   <div class="hero">
 
     <a href="{{site.baseurl}}/"><img class="wordmark" src="{{site.baseurl}}/img/wordmark.svg"></a>
@@ -29,7 +29,7 @@ title: site.data.pieces[page.data].piece.title
     </div>
 
     <div class="hero-text">
-        <h1>{{p.piece.postHeader}}</h1>
+        <h1>{{p.postHeader}}</h1>
     </div>
   </div>
 </header>
@@ -38,35 +38,35 @@ title: site.data.pieces[page.data].piece.title
 
   <div class="about-client">
     <div class="about-title">
-      <h2>{{p.piece.postTitle}}</h2>
+      <h2>{{p.postTitle}}</h2>
       <img class="underline" src="{{site.baseurl}}/img/underline.svg">
     </div>
 
     <div class="about-desc">
-      <p>{{p.piece.intro}}</p>
+      <p>{{p.intro}}</p>
     </div>
   </div>
 
   <div class="client-photos">
-    {% if p.piece.website%}
+    {% if p.website%}
       <div class="imac-mockup">
         <img class="img-flex" src="{{site.baseurl}}/img/imac.png">
-        <iframe class="site-mockup" src="{{p.piece.website}}" style="border:none;"></iframe>
+        <iframe class="site-mockup" src="{{p.website}}" style="border:none;"></iframe>
       </div>
     {% endif %}
 
     <div class="about-study">
-      {% if p.piece.img1 %}
-        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img1}}">
+      {% if p.img1 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img1}}">
       {% endif %}
-      {% if p.piece.img2 %}
-        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img2}}">
+      {% if p.img2 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img2}}">
       {% endif %}
-      {% if p.piece.img3 %}
-        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img3}}">
+      {% if p.img3 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img3}}">
       {% endif %}
-      {% if p.piece.img4 %}
-        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.piece.img4}}">
+      {% if p.img4 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img4}}">
       {% endif %}
     </div>
   </div>
