@@ -1,5 +1,5 @@
 ---
-title: site.data.pieces[page.data].title
+title: site.data.pieces[page.data].piece.title
 ---
 
 {%include head.html%}
@@ -8,6 +8,9 @@ title: site.data.pieces[page.data].title
 
 <header style="background-image: url('{{site.baseurl}}/img/{{p.piece.heroImg}}'); background-size: cover;">
   <div class="hero">
+
+    <a href="{{site.baseurl}}/"><img class="wordmark" src="{{site.baseurl}}/img/wordmark.svg"></a>
+
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -26,9 +29,7 @@ title: site.data.pieces[page.data].title
     </div>
 
     <div class="hero-text">
-      {% if p.piece.postHeader %}
         <h1>{{p.piece.postHeader}}</h1>
-      {% endif %}
     </div>
   </div>
 </header>

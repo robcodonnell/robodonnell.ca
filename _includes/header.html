@@ -1,5 +1,8 @@
-<header style="background-image: url('{{ site.baseurl }}/img/whitecap.jpg'); background-size: cover;">
+<header style="background-image: url('{{ site.baseurl }}/img/{{page.hero}}'); background-size: cover; background-position: center; ">
   <div class="hero">
+
+    <a href="{{site.baseurl}}/"><img class="wordmark" src="{{site.baseurl}}/img/wordmark.svg"></a>
+
     <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
@@ -13,10 +16,5 @@
     <span onclick="openNav()" class="hamburger">
       <img src="{{site.baseurl}}/img/hamburg.svg" class="ham-bars">
     </span>
-
-
-    <div class="hero-text">
-      <h1></h1>
-    </div>
   </div>
 </header>

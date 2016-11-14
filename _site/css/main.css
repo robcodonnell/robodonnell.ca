@@ -22,6 +22,14 @@ body {
   margin: 0;
 }
 
+.wordmark {
+	width: 250px;
+	position: fixed;
+	top: 30px;
+	left: 30px;
+	z-index: 100000000;
+}
+
 header {
   position: relative;
 }
@@ -51,7 +59,7 @@ p {
 	right: 0;
 	background-color: rgba(0,0,0, 0.9);
 	overflow-x: hidden;
-	transition: all 0.5s ease-in;
+	transition: all 0.3s ease-in;
 }
 
 .overlay-content {
@@ -362,6 +370,18 @@ footer p {
 
 .case-study-img {
 	margin-bottom: 2em;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.social-icons a {
+	text-decoration: none;
+}
+
+.social {
+	width: 50px;
 }
 
 @media only screen and (min-width: 600px) {
