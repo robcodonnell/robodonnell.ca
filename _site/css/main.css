@@ -386,6 +386,59 @@ footer p {
 	width: 50px;
 }
 
+.title-opq {
+	font-size: 42px;
+	color: #ffde17;
+	position: absolute;
+	left: 3em;
+	top: 30%;
+}
+
+.title-trl {
+	opacity: .6;
+	font-size: 42px;
+	color: #ffde17;
+	position: absolute;
+	left: 3em;
+	top: 45%;
+}
+
+.title-trp {
+	opacity: .4;
+	font-size: 42px;
+	color: #ffde17;
+	position: absolute;
+	left: 3em;
+	top: 60%;
+}
+
+.button {
+	color: #000;
+	text-decoration: none;
+	border: 1px solid #ffde17;
+	padding: 1em 3em;
+	transition: all .3s ease-in;
+}
+
+.button:hover {
+	background-color: #ffde17;
+}
+
+.contact-me {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.down {
+	width: 200px;
+	position: absolute;
+	left: 11%;
+	top: 85%;
+	opacity: .3;
+}
+
 @media only screen and (min-width: 600px) {
 
 	.site-mockup {
