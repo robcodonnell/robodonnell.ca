@@ -387,29 +387,41 @@ footer p {
 }
 
 .title-opq {
-	font-size: 42px;
+	font-size: 16px;
 	color: #ffde17;
 	position: absolute;
-	left: 3em;
+	left: 2em;
 	top: 30%;
 }
 
 .title-trl {
 	opacity: .6;
-	font-size: 42px;
+	font-size: 16px;
 	color: #ffde17;
 	position: absolute;
-	left: 3em;
-	top: 45%;
+	left: 2em;
+	top: 40%;
 }
 
-.title-trp {
-	opacity: .4;
-	font-size: 42px;
-	color: #ffde17;
-	position: absolute;
-	left: 3em;
-	top: 60%;
+.typing {
+	animation:
+    typing 1.5s steps(40, end),
+    cursor .75s step-end infinite;
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: 'Inconsolata', monospace;
+	letter-spacing: .1em;
+	border-right: .1em solid #ffde17;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes cursor {
+  from, to { border-color: transparent }
+  50% { border-color: #ffde17; }
 }
 
 .button {
@@ -435,8 +447,9 @@ footer p {
 .down {
 	width: 200px;
 	position: absolute;
-	left: 10em;
-	top: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 10%;
 	opacity: .3;
 }
 
@@ -515,6 +528,18 @@ footer p {
   .nav {
     margin-right: 0;
   }
+
+	.title-opq {
+		font-size: 28px;
+		left: 2em;
+		top: 30%;
+	}
+
+	.title-trl {
+		font-size: 28px;
+		left: 2em;
+		top: 45%;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -560,6 +585,18 @@ footer p {
 	.site-mockup {
 		height: 59%;
 		top: 34%;
+	}
+
+	.title-opq {
+		font-size: 40px;
+		left: 2em;
+		top: 30%;
+	}
+
+	.title-trl {
+		font-size: 40px;
+		left: 2em;
+		top: 50%;
 	}
 }
 
