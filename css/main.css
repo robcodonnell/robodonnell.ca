@@ -272,6 +272,15 @@ footer p {
 	fill: #055138;
 }
 
+.tail-title {
+	color: #a7a9ac;
+	transition: all .2s ease-in;
+}
+
+.feat-one:hover .tail-title {
+	color: #055138;
+}
+
 .feat-two {
 	transition: all .2s ease-in;
 	cursor: pointer;
@@ -283,6 +292,15 @@ footer p {
 
 .feat-two:hover .etho-red {
 	fill: #f44336;
+}
+
+.etho-title {
+	color: #a7a9ac;
+	transition: all .2s ease-in;
+}
+
+.feat-two:hover .etho-title {
+	color: #f44336;
 }
 
 .feat-two .feature-piece-title {
@@ -388,7 +406,7 @@ footer p {
 
 .title-opq {
 	font-size: 16px;
-	color: #ffde17;
+	color: #000;
 	position: absolute;
 	left: 2em;
 	top: 30%;
@@ -397,7 +415,7 @@ footer p {
 .title-trl {
 	opacity: .6;
 	font-size: 16px;
-	color: #ffde17;
+	color: #000;
 	position: absolute;
 	left: 2em;
 	top: 40%;
@@ -411,7 +429,7 @@ footer p {
 	overflow: hidden;
 	font-family: 'Inconsolata', monospace;
 	letter-spacing: .1em;
-	border-right: .1em solid #ffde17;
+	border-right: .1em solid #000;
 }
 
 @keyframes typing {
@@ -421,7 +439,7 @@ footer p {
 
 @keyframes cursor {
   from, to { border-color: transparent }
-  50% { border-color: #ffde17; }
+  50% { border-color: #000; }
 }
 
 .button {
