@@ -468,7 +468,7 @@ footer p {
 	left: 50%;
 	transform: translateX(-50%);
 	bottom: 10%;
-	opacity: .3;
+	opacity: .5;
 }
 
 @media only screen and (min-width: 600px) {
