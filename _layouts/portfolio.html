@@ -1,7 +1,3 @@
----
-title: site.data.pieces[page.data].title
----
-
 {%include head.html%}
 
 {% assign p = site.data.pieces[page.data] %}
@@ -67,6 +63,15 @@ title: site.data.pieces[page.data].title
       {% endif %}
       {% if p.img4 %}
         <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img4}}">
+      {% endif %}
+      {% if p.img5 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img5}}">
+      {% endif %}
+      {% if p.img6 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img6}}">
+      {% endif %}
+      {% if p.img7 %}
+        <img class="img-flex case-study-img" src="{{site.baseurl}}/img/{{p.img7}}">
       {% endif %}
     </div>
   </div>
