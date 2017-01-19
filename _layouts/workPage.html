@@ -2,7 +2,26 @@
 
 <body>
 
-  {%include header.html %}
+  <header>
+    <div class="hero-nh">
+
+      <a href="{{site.baseurl}}/"><img class="wordmark" src="{{site.baseurl}}/img/wordmark.svg"></a>
+
+      <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="{{site.baseurl}}/">Home</a>
+        <a href="{{site.baseurl}}/work">Work</a>
+        <a href="{{site.baseurl}}/contact">Contact</a>
+      </div>
+
+      </div>
+      <span onclick="openNav()" class="hamburger">
+        <img src="{{site.baseurl}}/img/hamburg-w.svg" class="ham-bars">
+      </span>
+    </div>
+  </header>
 
   <main>
 
@@ -13,10 +32,6 @@
   {%include footer.html%}
 
   <script src="{{site.baseurl}}/js/main.js"></script>
-  <script src="{{site.baseurl}}/js/rellax.min.js"></script>
-  <script>
-    var rellax = new Rellax('.rellax');
-  </script>
 
 </body>
 </html>

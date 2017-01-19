@@ -14,43 +14,30 @@
 
 <body>
 
-  <header style="background-image: url('/img/work-hero-y.jpg'); background-size: cover; background-position: center; ">
-  <div class="hero">
+  <header>
+    <div class="hero-nh">
 
-    <a href="/"><img class="wordmark" src="/img/wordmark.svg"></a>
+      <a href="/"><img class="wordmark" src="/img/wordmark.svg"></a>
 
-    <div id="myNav" class="overlay">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-    <div class="overlay-content">
-      <a href="/">Home</a>
-      <a href="/work">Work</a>
-      <a href="/contact">Contact</a>
+      <div class="overlay-content">
+        <a href="/">Home</a>
+        <a href="/work">Work</a>
+        <a href="/contact">Contact</a>
+      </div>
+
+      </div>
+      <span onclick="openNav()" class="hamburger">
+        <img src="/img/hamburg-w.svg" class="ham-bars">
+      </span>
     </div>
-
-    </div>
-    <span onclick="openNav()" class="hamburger">
-      <img src="/img/hamburg.svg" class="ham-bars">
-    </span>
-  </div>
-</header>
-
+  </header>
 
   <main>
 
-    <div class="para-title">
-  <div class="rellax title-opq" data-rellax-speed="-5">
-    <h2 class="typing">projects</h2>
-  </div>
-  <div class="rellax title-trl" data-rellax-speed="-3">
-    <h2 class="typing">projects</h2>
-  </div>
-  <div class="down">
-    <img src="/img/down-y.svg">
-  </div>
-</div>
-
-<section class="work-feed">
+    <section class="work-feed">
   
     
       <a class="case-study" href="/benzoyl">
@@ -147,10 +134,6 @@
 
 
   <script src="/js/main.js"></script>
-  <script src="/js/rellax.min.js"></script>
-  <script>
-    var rellax = new Rellax('.rellax');
-  </script>
 
 </body>
 </html>
