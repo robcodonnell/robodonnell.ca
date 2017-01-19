@@ -222,11 +222,6 @@ footer p {
 	line-height: 1.5;
 }
 
-.contact-me {
-	text-align: center;
-	padding-top: 3em;
-}
-
 .contact-options {
 	text-align: center;
 	padding: 2em 0;
@@ -238,7 +233,8 @@ footer p {
 
 .email {
 	margin-bottom: 2em;
-	color: red;
+	margin-left: 2rem;
+	color: #ffde17;
 }
 
 .social {
@@ -250,108 +246,6 @@ footer p {
 .work {
 	margin-top: em;
 	position: relative;
-}
-
-.feature-piece-one, .feature-piece-two {
-	text-decoration: none;
-}
-
-.feature-piece-box {
-	padding: 20%;
-}
-
-.feature-piece-title {
-	padding: 4em;
-	margin-bottom: 1em;
-}
-
-.feat-one {
-	transition: all .2s ease-in;
-	cursor: pointer;
-}
-
-.tailwater-green {
-	transition: all .2s ease-in;
-}
-
-.feat-one:hover .tailwater-green {
-	fill: #055138;
-}
-
-.tail-title {
-	color: #a7a9ac;
-	transition: all .2s ease-in;
-}
-
-.feat-one:hover .tail-title {
-	color: #055138;
-}
-
-.feat-two {
-	transition: all .2s ease-in;
-	cursor: pointer;
-}
-
-.etho-red {
-	transition: all .2s ease-in;
-}
-
-.feat-two:hover .etho-red {
-	fill: #f44336;
-}
-
-.etho-title {
-	color: #a7a9ac;
-	transition: all .2s ease-in;
-}
-
-.feat-two:hover .etho-title {
-	color: #f44336;
-}
-
-.feat-two .feature-piece-title {
-	padding: 1em 5em;
-}
-
-.svg-illu > .tailwater-green {
-	padding: 1em;
-}
-
-.fish-sm {
-	width: 80px;
-	position: absolute;
-	left: 100px;
-}
-
-.fish-md {
-	width: 120px;
-	position: absolute;
-	left: 145px;
-	top: 200px;
-}
-
-.fish-lg {
-	width: 160px;
-	position: absolute;
-	left: -25px;
-}
-
-.pill-md {
-	width: 60px;
-	position: absolute;
-	right: 150px;
-}
-
-.pill-sm {
-	width: 50px;
-	position: absolute;
-	right: 50px;
-}
-
-.pill-lg {
-	width: 90px;
-	position: absolute;
-	right: -10px;
 }
 
 .case-study {
@@ -412,7 +306,8 @@ footer p {
 }
 
 .social {
-	width: 75px;
+	width: 50px;
+	margin: 0 20px;
 }
 
 .title-opq {
@@ -472,11 +367,12 @@ footer p {
 }
 
 .contact-me {
+	text-align: left;
+	padding-top: 3em;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 80%;
+	top: 10%;
+	left: 0;
+	width: 100%;
 }
 
 .down {
@@ -486,6 +382,12 @@ footer p {
 	transform: translateX(-50%);
 	bottom: 10%;
 	opacity: .5;
+}
+
+.shout {
+	font-size: 80px;
+	margin: 2rem;
+	text-align: left;
 }
 
 @media only screen and (min-width: 600px) {
@@ -551,6 +453,16 @@ footer p {
 		left: 1.5em;
 		top: 45%;
 	}
+
+	.shout {
+		font-size: 100px;
+		line-height: 1.1;
+		margin-left: 5rem;
+	}
+
+	.email {
+		margin-left: 5rem;
+	}
 }
 
 @media only screen and (min-width: 800px) {
@@ -589,6 +501,16 @@ footer p {
 	.title-trl {
 		font-size: 32px;
 		top: 50%;
+	}
+
+	.shout {
+		font-size: 120px;
+		line-height: 1;
+		margin-left: 8rem;
+	}
+
+	.email {
+		margin-left: 8rem;
 	}
 }
 
@@ -652,6 +574,17 @@ footer p {
 		font-size: 40px;
 		left: 1.2em;
 		top: 40%;
+	}
+
+	.shout {
+		font-size: 140px;
+		line-height: .9;
+		margin-left: 10rem;
+		margin-top: .5rem;
+	}
+
+	.email {
+		margin-left: 10rem;
 	}
 }
 
