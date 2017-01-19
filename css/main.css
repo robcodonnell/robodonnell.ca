@@ -370,9 +370,10 @@ footer p {
 	text-align: left;
 	padding-top: 3em;
 	position: absolute;
-	top: 10%;
+	top: 50%;
 	left: 0;
 	width: 100%;
+	transform: translateY(-50%);
 }
 
 .down {
