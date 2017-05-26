@@ -24,7 +24,7 @@ body {
 }
 
 .wordmark {
-	width: 250px;
+	width: 200px;
 	position: fixed;
 	top: 30px;
 	left: 30px;
@@ -45,6 +45,7 @@ p {
 
 .hero {
 	height: 100vh;
+	border: 50px solid #fff;
 }
 
 .hero-img {
@@ -62,43 +63,47 @@ p {
 	z-index: 100000;
 	top: 0;
 	right: 0;
-	background-color: rgba(0,0,0, 0.9);
+	background-color: rgba(255,255,255, 0.9);
 	overflow-x: hidden;
 	transition: all 0.3s ease-in;
 }
 
 .overlay-content {
+	padding-left: 1rem;
 	position: relative;
-	top: 25%;
+	top: 20%;
 	width: 100%;
-	text-align: center;
+	text-align: left;
 	margin-top: 2em;
 }
 
 .overlay a {
-	padding: 25px;
+	padding: 1px;
 	text-decoration: none;
-	font-size: 40px;
-	color: #818181;
+	font-size: 65px;
+	font-weight: bold;
+	color: #000;
 	display: block;
-	transition: all 0.5s ease-in;
+	transition: all 0.2s ease-in;
 }
 
 .overlay a:hover, .overlay a:focus {
-	color: #f1f1f1;
+	color: #ff0000;
 }
 
 .overlay .closebtn {
+	position: absolute;
+	text-align: right;
   font-size: 40px;
-  top: 15px;
-  right: 35px;
+  top: 35px;
+  right: 38px;
 }
 
 .hamburger {
 	position: fixed;
 	z-index: 100;
-	top: 3em;
-	right: 3em;
+	top: 40px;
+	right: 2em;
 	cursor: pointer;
 }
 
@@ -234,13 +239,22 @@ footer p {
 .email {
 	margin-bottom: 2em;
 	margin-left: 2rem;
-	color: #ffde17;
+	color: #ff0000;
 }
 
-.social {
-  width: 50px;
-  display: inline-block;
-  margin: 0 10px;
+.social-icons {
+	margin-top: 4em;
+	text-align: left;
+	padding-left: 2rem;
+}
+
+.social-icons a {
+	text-decoration: none;
+	color: #ff0000;
+}
+
+.social-link {
+	font-style: italic;
 }
 
 .work {
@@ -296,20 +310,6 @@ footer p {
 	margin-bottom: 2em;
 }
 
-.social-icons {
-	text-align: center;
-	margin-top: 4em;
-}
-
-.social-icons a {
-	text-decoration: none;
-}
-
-.social {
-	width: 50px;
-	margin: 0 20px;
-}
-
 .title-opq {
 	font-size: 16px;
 	color: #000;
@@ -348,22 +348,20 @@ footer p {
   50% { border-color: #000; }
 }
 
-.button {
-	color: #000;
+.work-link {
 	text-decoration: none;
-	border: 1px solid #000;
 	padding: 1em 3em;
-	transition: all .3s ease-in;
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
-	bottom: 10%;
-	text-align: center;
+	left: -1rem;
+	bottom: 1rem;
 }
 
-.button:hover {
-	background-color: #ffde17;
-	border: 1px solid #ffde17;
+.work-link p {
+	margin: 0;
+	font-size: 44px;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	color: #ff0000;
 }
 
 .contact-me {
@@ -399,18 +397,21 @@ footer p {
 	}
 
 	.overlay a {
-		font-size: 60px;
+		font-size: 80px;
+		padding-left: 2rem;
+		margin-bottom: 1rem;
+
 	}
 
-	.social {
-    margin: 0 25px;
-  }
+	.wordmark {
+		left: 3rem;
+	}
 
 	.overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
+    top: 10px;
+    right: 25px;
+    font-size: 80px;
 	}
 
   .hero {
@@ -458,7 +459,16 @@ footer p {
 	.shout {
 		font-size: 100px;
 		line-height: 1.1;
-		margin-left: 5rem;
+		margin-left: 4rem;
+	}
+
+	.social-icons {
+		padding-left: 4rem;
+	}
+
+	.social-link {
+		display: inline-block;
+		margin-right: 2rem;
 	}
 
 	.email {
@@ -471,6 +481,11 @@ footer p {
 	html {
 		font-size: 110%;
 		line-height: 1.3;
+	}
+
+	.overlay .closebtn {
+		top: 5px;
+		right: 30px;
 	}
 
 	.about-client {
@@ -494,6 +509,15 @@ footer p {
     margin-right: 0;
   }
 
+	.work-link {
+		left: -1rem;
+		bottom: 0;
+	}
+
+	.work-link p {
+		font-size: 64px;
+	}
+
 	.title-opq {
 		font-size: 32px;
 		top: 30%;
@@ -510,6 +534,10 @@ footer p {
 		margin-left: 8rem;
 	}
 
+	.social-icons {
+		padding-left: 8rem;
+	}
+
 	.email {
 		margin-left: 8rem;
 	}
@@ -520,6 +548,11 @@ footer p {
 	html {
 		font-size: 130%;
 		line-height: 1.4;
+	}
+
+	.overlay .closebtn {
+		top: 0;
+		right: 35px;
 	}
 
 	.feature-piece-box {
@@ -584,8 +617,8 @@ footer p {
 		margin-top: .5rem;
 	}
 
-	.email {
-		margin-left: 10rem;
+	.social-icons {
+		padding-left: 10rem;
 	}
 }
 
