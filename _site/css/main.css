@@ -19,6 +19,12 @@ html {
 	box-sizing: inherit;
 }
 
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 body {
   margin: 0;
 }
@@ -26,7 +32,7 @@ body {
 .wordmark {
 	width: 200px;
 	position: fixed;
-	top: 30px;
+	top: 25px;
 	left: 30px;
 	z-index: 100000000;
 }
@@ -270,6 +276,10 @@ footer p {
 	opacity: .7;
 }
 
+.work-feed {
+	border: 25px solid #fff;
+}
+
 .case-box {
 	position: relative;
 	height: 400px;
@@ -277,6 +287,7 @@ footer p {
 	text-align: center;
 	transition: all .3s ease-in;
 	z-index: 6;
+	border: 25px solid #fff;
 }
 
 .img-height {
@@ -510,7 +521,7 @@ footer p {
   }
 
 	.work-link {
-		left: -1rem;
+		left: 1rem;
 		bottom: 0;
 	}
 

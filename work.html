@@ -4,7 +4,7 @@ title: Case Studies
 meta: A collection of case studies of Rob O'Donnell's work including branding, web design, UX, typography.
 ---
 
-<section class="work-feed">
+<section class="work-feed clearfix">
   {% for data in site.data.pieces %}
     {% assign item = data[1] %}
       <a class="case-study" href="{{site.baseurl}}/{{item.link}}">
