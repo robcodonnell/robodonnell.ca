@@ -12,7 +12,7 @@
 
     <div class="overlay-content">
       <a href="{{site.baseurl}}/">Home</a>
-      <a href="{{site.baseurl}}/work">Work</a>
+      <a href="{{site.baseurl}}/work">Portfolio</a>
       <a href="{{site.baseurl}}/contact">Contact</a>
     </div>
 
@@ -46,7 +46,8 @@
   <div class="client-photos">
     {% if p.website%}
       <div class="imac-mockup">
-        <img class="img-flex" src="{{site.baseurl}}/img/imac.png">
+        <img class="img-flex imac" src="{{site.baseurl}}/img/imac.png">
+        <img class="img-flex iphone" src="{{site.baseurl}}/img/iphone.png">
         <iframe class="site-mockup" src="{{p.website}}" style="border:none;"></iframe>
       </div>
     {% endif %}

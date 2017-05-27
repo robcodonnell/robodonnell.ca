@@ -84,7 +84,7 @@ p {
 }
 
 .overlay a {
-	padding: 1px;
+	padding: 8px;
 	text-decoration: none;
 	font-size: 65px;
 	font-weight: bold;
@@ -124,6 +124,10 @@ p {
   transform: translateX(-50%);
 	text-align: center;
 	color: #fff;
+}
+
+.hero-text h1 {
+	font-size: 32px;
 }
 
 .page-header {
@@ -304,10 +308,10 @@ footer p {
 }
 
 .site-mockup {
-	width: 95%;
-	height: 56%;
+	width: 84%;
+	height: 73%;
 	position: absolute;
-	top: 32%;
+	top: 46%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 }
@@ -315,6 +319,10 @@ footer p {
 .imac-mockup {
 	position: relative;
 	padding-bottom: 3em;
+}
+
+.imac {
+	display: none;
 }
 
 .case-study-img {
@@ -403,8 +411,20 @@ footer p {
 @media only screen and (min-width: 600px) {
 
 	.site-mockup {
+		width: 95%;
 		height: 59%;
+		position: absolute;
 		top: 32%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.iphone {
+		display: none;
+	}
+
+	.imac {
+		display: block;
 	}
 
 	.overlay a {
