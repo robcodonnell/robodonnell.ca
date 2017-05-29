@@ -237,6 +237,10 @@ footer p {
 	line-height: 1.5;
 }
 
+.about-desc a {
+	color: #ff0000;
+}
+
 .contact-options {
 	text-align: center;
 	padding: 2em 0;
